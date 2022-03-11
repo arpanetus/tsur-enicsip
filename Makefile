@@ -1,5 +1,7 @@
 export FORCE_COLOR = true
 
+test-quest-1-reverse-string:
+	cd quest-1/reverse-string && cargo test --lib
 
 test-quest-1-fibonacci:
 	cd quest-1/fibonacci2 && cargo test --lib
@@ -22,6 +24,7 @@ test-quest-1:
 	make test-quest-1-temperature-conv
 	make test-quest-1-looping
 	make test-quest-1-speed-transformation
+	make test-quest-1-reverse-string
 
 test:
 	make test-quest-1
