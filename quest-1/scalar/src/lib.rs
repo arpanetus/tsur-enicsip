@@ -9,6 +9,7 @@ where
 {
     let mut acc = T::zero();
 
+
     let mut a = a.clone();
     let mut b = b.clone();
 
