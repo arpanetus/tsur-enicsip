@@ -1,5 +1,8 @@
 export FORCE_COLOR = true
 
+test-quest-1-tuples:
+	cd quest-1/tuples && cargo test --lib
+
 test-quest-1-division-and-remainder:
 	cd quest-1/division-and-remainder && cargo test --lib
 
@@ -38,6 +41,7 @@ test-quest-1:
 	make test-quest-1-find-factorial
 	make test-quest-1-matrix-transposition
 	make test-quest-1-division-and-remainder
+	make test-quest-1-tuples
 
 test:
 	make test-quest-1
