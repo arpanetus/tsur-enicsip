@@ -1,5 +1,8 @@
 export FORCE_COLOR = true
 
+test-quest-1-division-and-remainder:
+	cd quest-1/division-and-remainder && cargo test --lib
+
 test-quest-1-matrix-transposition:
 	cd quest-1/matrix-transposition && cargo test --lib
 
@@ -24,6 +27,7 @@ test-quest-1-temperature-conv:
 test-quest-1-speed-transformation:
 	cd quest-1/speed-transformation && cargo test --lib
 
+
 test-quest-1:
 	make test-quest-1-fibonacci
 	make test-quest-1-scalar
@@ -33,6 +37,7 @@ test-quest-1:
 	make test-quest-1-reverse-string
 	make test-quest-1-find-factorial
 	make test-quest-1-matrix-transposition
+	make test-quest-1-division-and-remainder
 
 test:
 	make test-quest-1
