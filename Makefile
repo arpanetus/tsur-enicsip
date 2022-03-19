@@ -45,8 +45,12 @@ test-quest-1:
 test-quest-2-ownership:
 	cd quest-2/ownership && cargo test --lib
 
+test-quest-2-copy:
+	cd quest-2/copy && cargo test --lib
+
 test-quest-2:
-	make test-quest-2-ownership
+	make test-quest-2-ownership \
+		 test-quest-2-copy	
 
 test:
 	make test-quest-1 \
