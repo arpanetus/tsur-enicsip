@@ -30,19 +30,25 @@ test-quest-1-temperature-conv:
 test-quest-1-speed-transformation:
 	cd quest-1/speed-transformation && cargo test --lib
 
-
 test-quest-1:
-	make test-quest-1-fibonacci
-	make test-quest-1-scalar
-	make test-quest-1-temperature-conv
-	make test-quest-1-looping
-	make test-quest-1-speed-transformation
-	make test-quest-1-reverse-string
-	make test-quest-1-find-factorial
-	make test-quest-1-matrix-transposition
-	make test-quest-1-division-and-remainder
-	make test-quest-1-tuples
+	make test-quest-1-fibonacci \
+	     test-quest-1-scalar \
+	     test-quest-1-temperature-conv \
+	     test-quest-1-looping \
+	     test-quest-1-speed-transformation \
+	     test-quest-1-reverse-string \
+	     test-quest-1-find-factorial \
+	     test-quest-1-matrix-transposition \
+	     test-quest-1-division-and-remainder \
+	     test-quest-1-tuples
+
+test-quest-2-ownership:
+	cd quest-2/ownership && cargo test --lib
+
+test-quest-2:
+	make test-quest-2-ownership
 
 test:
-	make test-quest-1
+	make test-quest-1 \
+	     test-quest-2
 	
