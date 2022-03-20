@@ -51,10 +51,14 @@ test-quest-2-copy:
 test-quest-2-borrow:
 	cd quest-2/borrow && cargo test --lib
 
+test-quest-2-doubtful:
+	cd quest-2/doubtful && cargo test --lib
+
 test-quest-2:
 	make test-quest-2-ownership \
 		 test-quest-2-copy \
-		 test-quest-2-borrow
+		 test-quest-2-borrow \
+		 test-quest-2-doubtful
 
 test:
 	make test-quest-1 \
