@@ -63,6 +63,9 @@ test-quest-2-changes:
 test-quest-2-string-literals:
 	cd quest-2/string-literals && cargo test --lib
 
+test-quest-2-name-initials:
+	cd quest-2/name-initials && cargo test --lib
+
 test-quest-2:
 	make test-quest-2-ownership \
 		 test-quest-2-copy \
@@ -70,7 +73,8 @@ test-quest-2:
 		 test-quest-2-doubtful \
 		 test-quest-2-borrow-the-reference \
 		 test-quest-2-changes \
-		 test-quest-2-string-literals
+		 test-quest-2-string-literals \
+		 test-quest-2-name-initials
 
 test:
 	make test-quest-1 \

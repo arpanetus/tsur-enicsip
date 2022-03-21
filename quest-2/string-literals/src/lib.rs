@@ -3,7 +3,7 @@ pub fn is_empty(s: &str) -> bool {
 }
 
 pub fn is_ascii(s: &str) -> bool {
-    s.chars().all(|c| if c as u32 > 127 { false } else { true })
+    s.chars().all(|c| c as u32 <= 127)
 }
 
 pub fn contains(a: &str, b: &str) -> bool {
