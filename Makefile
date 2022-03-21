@@ -69,6 +69,9 @@ test-quest-2-name-initials:
 test-quest-2-arrange-it:
 	cd quest-2/arrange-it && cargo test --lib || echo "it may fail and I don't care" || true
 
+test-quest-2-tic-tac-toe: 
+	cd quest-2/tic-tac-toe && cargo test --lib
+
 test-quest-2:
 	make test-quest-2-ownership \
 		 test-quest-2-copy \
@@ -78,7 +81,8 @@ test-quest-2:
 		 test-quest-2-changes \
 		 test-quest-2-string-literals \
 		 test-quest-2-name-initials \
-		 test-quest-2-arrange-it
+		 test-quest-2-arrange-it \
+		 test-quest-2-tic-tac-toe
 
 test:
 	make test-quest-1 \
