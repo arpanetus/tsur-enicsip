@@ -66,6 +66,9 @@ test-quest-2-string-literals:
 test-quest-2-name-initials:
 	cd quest-2/name-initials && cargo test --lib
 
+test-quest-2-arrange-it:
+	cd quest-2/arrange-it && cargo test --lib || echo "it may fail and I don't care" || true
+
 test-quest-2:
 	make test-quest-2-ownership \
 		 test-quest-2-copy \
@@ -74,9 +77,9 @@ test-quest-2:
 		 test-quest-2-borrow-the-reference \
 		 test-quest-2-changes \
 		 test-quest-2-string-literals \
-		 test-quest-2-name-initials
+		 test-quest-2-name-initials \
+		 test-quest-2-arrange-it
 
 test:
 	make test-quest-1 \
 	     test-quest-2
-	
