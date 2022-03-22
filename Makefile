@@ -90,9 +90,13 @@ test-quest-3-circle:
 test-quest-3-card-deck:
 	cd quest-3/card-deck && cargo test --lib
 
+test-quest-3-arrays:
+	cd quest-3/arrays && cargo test --lib
+
 test-quest-3:
 	make test-quest-3-circle \
 		 test-quest-3-card-deck \
+		 test-quest-3-arrays \
 
 test:
 	make test-quest-1 \
