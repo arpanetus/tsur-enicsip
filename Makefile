@@ -72,9 +72,6 @@ test-quest-2-arrange-it:
 test-quest-2-tic-tac-toe: 
 	cd quest-2/tic-tac-toe && cargo test --lib
 
-test-quest-3-circle:
-	cd quest-3/circle && cargo test --lib
-
 test-quest-2:
 	make test-quest-2-ownership \
 		 test-quest-2-copy \
@@ -87,9 +84,15 @@ test-quest-2:
 		 test-quest-2-arrange-it \
 		 test-quest-2-tic-tac-toe
 
+test-quest-3-circle:
+	cd quest-3/circle && cargo test --lib
+
+test-quest-3-card-deck:
+	cd quest-3/card-deck && cargo test --lib
 
 test-quest-3:
 	make test-quest-3-circle \
+		 test-quest-3-card-deck \
 
 test:
 	make test-quest-1 \
