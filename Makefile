@@ -4,7 +4,7 @@ test-quest-1-x:
 	cd quest-1/$(EX_NAME) && cargo test --lib
 
 test-quest-1:
-	for ex in fibonacci \
+	for ex in fibonacci2 \
 	     	  scalar \
 	     	  temperature-conv \
 	     	  looping \
